@@ -17,7 +17,8 @@ async function readFile(fileName) {
       throw new Error(`Failed to fetch ${fileName}`);
     }
     const content = await response.text();
-    console.log(`${fileName}: ${content}`);
+    // console.log(`${fileName}: ${content}`);
+	  console.log(content);
   } catch (error) {
     console.error(error);
   }
